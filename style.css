@@ -1,0 +1,33 @@
+.red {
+  background-color: red;
+  height: 300px;
+  width: 600px;
+  margin-top: -9px;
+}
+
+.green {
+  height: 0;
+  margin-bottom: 0px;
+  width: 117px;
+  border-bottom: 300px solid green;
+  border-left: 483px solid transparent;
+  border-right: 0 solid transparent;
+  border-top: 0 solid transparent;
+  position: absolute;
+  top: 0;
+  z-index: 4;
+}
+
+.blue {
+  height: 0;
+  margin-bottom: 0px;
+  width: 215px;
+  border-bottom: 300px solid blue;
+  border-left: 385px solid transparent;
+  border-right: 0 solid transparent;
+  border-top: 0 solid transparent;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+/*# sourceMappingURL=style.css.map */

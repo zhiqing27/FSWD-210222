@@ -1,0 +1,45 @@
+@mixin border-left($x, $y, $color) {
+    border-left: $x $y $color
+}
+
+@mixin border-btm($color) {
+    border-bottom: 300px solid $color
+}
+
+@mixin default-setting {
+    border-right: 0 solid transparent;
+    border-top: 0 solid transparent;
+    position: absolute;
+    top: 0;
+}
+
+@mixin zindex($index) {
+    z-index: $index;
+}
+
+.red {
+    background-color: red;
+    height: 300px;
+    width: 600px;
+    margin-top: -9px;
+}
+
+.green {
+    height: 0;
+    margin-bottom: 0px;
+    width: 117px;
+    @include border-btm(green);
+    @include border-left(483px, solid, transparent);
+    @include default-setting;
+    @include zindex(4)
+}
+
+.blue {
+    height: 0;
+    margin-bottom: 0px;
+    width: 215px;
+    @include border-btm(blue);
+    @include border-left(385px, solid, transparent);
+    @include default-setting;
+    @include zindex(3)
+}
